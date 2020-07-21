@@ -2,6 +2,7 @@ package com.example.listview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -33,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
                 String value=adapter.getItem(position);
                 Toast.makeText(getApplicationContext(),value,Toast.LENGTH_SHORT).show();
 
+                Intent i = new Intent(MainActivity.this, Main2Activity.class);
+                i.putExtra("key",value);
+                startActivity(i);
             }
         });
+
     }
 }

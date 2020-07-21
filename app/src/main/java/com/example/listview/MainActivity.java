@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView=(ListView)findViewById(R.id.listView);
+        listView=(ListView)findViewById(R.id.listview);
         textView=(TextView)findViewById(R.id.textView);
         listItem = getResources().getStringArray(R.array.array_technology);
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
